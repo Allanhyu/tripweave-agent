@@ -1,0 +1,73 @@
+# Environment and local runtime settings
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+backend/runtime_settings.json
+
+# Local user state and private data
+backend/data/*.json
+!backend/data/*.example.json
+backend/uploads/
+uploads/
+private-data/
+
+# Legacy integrations retained locally but excluded from the public repository
+frontend/
+backend/app/tools/xhs.py
+backend/app/tools/xhs_sign/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+build/
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+
+# Local databases, generated exports, models and large caches
+*.db
+*.sqlite
+*.sqlite3
+exports/
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+
+# IDE and operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

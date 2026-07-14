@@ -1,0 +1,32 @@
+name: Bug report
+description: 报告可复现的功能缺陷
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请描述实际行为和期望行为，不要粘贴密钥或 Cookie。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 启动后端...
+        2. 输入...
+        3. 点击...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      placeholder: Windows 11, Python 3.11, Node 20, Chrome
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏日志
+      render: shell

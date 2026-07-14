@@ -1,0 +1,11 @@
+{
+  "default_city": "",
+  "travelers": 1,
+  "max_budget": 0,
+  "preferences": [],
+  "avoid": [],
+  "pace": "moderate",
+  "accommodation": "standard hotel",
+  "transportation": "public transit",
+  "include_packing": true
+}
